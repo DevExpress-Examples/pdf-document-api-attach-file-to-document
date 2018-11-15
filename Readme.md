@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Program.cs](./CS/AttachFile/Program.cs) (VB: [Program.vb](./VB/AttachFile/Program.vb))
+<!-- default file list end -->
 # How to attach a file to the document
 
 
