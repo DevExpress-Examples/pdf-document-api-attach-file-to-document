@@ -4,17 +4,21 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [Program.cs](./CS/AttachFile/Program.cs) (VB: [Program.vb](./VB/AttachFile/Program.vb))
-<!-- default file list end -->
 # PDF Document API - Attach a File to a Document
 
-This example shows how to programmatically attach a file to the PDF document.<br><br>The Universal Subscription or an additional Document Server Subscription is required to use this example in production code. Please refer to the <a href="https://www.devexpress.com/Subscriptions/">DevExpress Subscription</a> page for pricing information. <br><br>
+This example shows how to attach a file to the PDF document.
 
-<br/>
+> [!IMPORTANT]
+> You need a license for the [DevExpress Office File API Subscription](https://www.devexpress.com/products/net/office-file-api/) or [DevExpress Universal Subscription](https://www.devexpress.com/subscriptions/universal.xml) to use this library in production code
 
+## Files to Review
+
+* [Program.cs](./CS/AttachFile/Program.cs) (VB: [Program.vb](./VB/AttachFile/Program.vb))
+
+## Documentation
+
+* [Attachments in PDF Documents](https://docs.devexpress.com/OfficeFileAPI/114958/pdf-document-api/additional-content/attachments)
 
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?

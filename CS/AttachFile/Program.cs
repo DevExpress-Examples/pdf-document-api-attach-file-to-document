@@ -1,5 +1,6 @@
 ﻿using DevExpress.Pdf;
 using System;
+using System.Diagnostics;
 using System.IO;
 
 namespace AttachFile {
@@ -8,19 +9,20 @@ namespace AttachFile {
 
             using (PdfDocumentProcessor processor = new PdfDocumentProcessor()) {
                 // Load a document.
-                processor.LoadDocument("..\\..\\Document.pdf");
+                processor.LoadDocument("..\\..\\..\\Document.pdf");
 
                 // Attach a file to the PDF document. 
                 processor.AttachFile(new PdfFileAttachment() {
                     CreationDate = DateTime.Now,
                     Description = "This is my attach file.",
                     FileName = "MyAttach.txt",
-                    Data = File.ReadAllBytes("..\\..\\FileToAttach.txt")
+                    Data = File.ReadAllBytes("..\\..\\..\\FileToAttach.txt")
                 });
 
                 // The attached document.
-                processor.SaveDocument("..\\..\\Result.pdf");
+                processor.SaveDocument("..\\..\\..\\Result.pdf");
             }
+            Process.Start(new ProcessStartInfo("..\\..\\..\\Result.pdf") { UseShellExecute = true });
         }
     }
 }
