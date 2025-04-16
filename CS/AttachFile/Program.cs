@@ -2,6 +2,7 @@
 using System;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 
 namespace AttachFile {
     class Program {
@@ -16,8 +17,11 @@ namespace AttachFile {
                     CreationDate = DateTime.Now,
                     Description = "This is my attach file.",
                     FileName = "MyAttach.txt",
-                    Data = File.ReadAllBytes("..\\..\\..\\FileToAttach.txt")
+                    Data = File.ReadAllBytes("..\\..\\..\\FileToAttach.txt"),
+                    MimeType = "text/plain",
+                    Relationship = PdfAssociatedFileRelationship.Supplement,
                 });
+
 
                 // The attached document.
                 processor.SaveDocument("..\\..\\..\\Result.pdf");
